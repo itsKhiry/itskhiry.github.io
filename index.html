@@ -3,13 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khiry's Website</title>
+    <title>Khiry Hewitt</title>
+
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #333; }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            background: #333;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            background: #555;
+        }
     </style>
 </head>
-<div class="hero" style="background-color: ##696766;">
-    <h1>Welcome to Khiry's Website</h1>
-    <p>Cool stuff coming soon!</p>
-</div>
+
+<body>
+
+    <div class="card">
+        <!-- Replace with your image -->
+        <img src="your-photo.jpg" alt="Khiry" class="profile-img">
+
+        <h1>Khiry Hewitt</h1>
+        <p>Digital Creator / Developer</p>
+
+        <div class="links">
+            <a href="#">Email</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+
+</body>
+</html>
