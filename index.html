@@ -6,86 +6,77 @@
     <title>Khiry Hewitt</title>
 
     <style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #d8a4e3, #8f7bff);
-    }
-
-    .card {
-        background: rgba(255, 255, 255, 0.85);
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        text-align: center;
-        width: 340px;
-        backdrop-filter: blur(10px);
-
-        opacity: 0;
-        transform: translateY(20px);
-        animation: fadeIn 0.6s ease forwards;
-        animation-delay: 0.4s;
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-    }
-
-    h1 {
-        margin: 10px 0;
-        font-size: 24px;
-    }
-
-    p {
-        color: #666;
-        margin-bottom: 20px;
-        font-size: 14px;
-    }
-
-    .links a {
-        display: inline-block;
-        margin: 5px;
-        text-decoration: none;
-        color: white;
-        background: #333;
-        padding: 8px 12px;
-        border-radius: 8px;
-        font-size: 14px;
-    }
-
-    .links a:hover {
-        background: #555;
-    }
-
-    /* ✅ MOVE IT HERE */
-    @keyframes fadeIn {
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #d8a4e3, #8f7bff);
         }
-    }
-</style>
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 340px;
+            backdrop-filter: blur(10px);
+
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .links a {
+            display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            color: white;
+            background: #333;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            background: #555;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
-
 <body>
-
     <div class="card">
-        <!-- Replace with your image -->
         <img src="khiry.png" alt="Khiry" class="profile-img">
 
         <h1>Khiry Hewitt</h1>
@@ -93,10 +84,9 @@
 
         <div class="links">
             <a href="mailto:khiryhewitt@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/khiryhewitt/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/khiryhewitt/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="tel:+64276334231">Phone</a>
         </div>
     </div>
-
 </body>
 </html>
