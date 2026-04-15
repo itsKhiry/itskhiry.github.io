@@ -15,14 +15,21 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #d8a4e3, #8f7bff);
         }
+  
             .card {
             background: rgba(255, 255, 255, 0.85);
             padding: 40px;
             border-radius: 16px;
-             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             text-align: center;
             width: 340px;
             backdrop-filter: blur(10px);
+
+             /* Animation */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.6s ease forwards;
+            animation-delay: 0.4s;
         }
 
         .profile-img {
